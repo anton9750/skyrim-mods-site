@@ -170,7 +170,9 @@ export function ModCard({ mod }: { mod: Mod }) {
       {mod.files && mod.files.length > 0 && (
         <>
           <FilesToggle onClick={() => setShowFiles((v) => !v)}>
-            {showFiles ? "Hide file list" : `What's inside (${mod.files.length} files)`}
+            {showFiles
+              ? "Hide file list"
+              : `What's inside (${mod.files.length} ${mod.files.length === 1 ? "file" : "files"})`}
           </FilesToggle>
           {showFiles && (
             <FileList>
