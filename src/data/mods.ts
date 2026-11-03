@@ -12,7 +12,6 @@ export type Genre =
 
 export interface ModFile {
   label: string;
-  url: string;
   size: string;
 }
 
@@ -44,14 +43,13 @@ export const mods: Mod[] = [
     version: "10.2",
     requirements: ["Skyrim Special Edition", "SKSE64 (recommended)"],
     downloadUrl:
-      "https://github.com/REPLACE_ME/skyrim-mods-site/releases/download/apocalypse-10.2/Apocalypse-Magic-of-Skyrim.zip",
+      "https://github.com/anton9750/skyrim-mods-site/releases/download/apocalypse-10.2/Apocalypse-Magic-of-Skyrim.zip",
     downloadSize: "52 MB",
     files: [
-      { label: "Apocalypse - Magic of Skyrim.esp", url: "#", size: "1.4 MB" },
-      { label: "Apocalypse - Magic of Skyrim.bsa", url: "#", size: "21.6 MB" },
+      { label: "Apocalypse - Magic of Skyrim.esp", size: "1.4 MB" },
+      { label: "Apocalypse - Magic of Skyrim.bsa", size: "21.6 MB" },
       {
         label: "Apocalypse - Magic of Skyrim - Textures.bsa",
-        url: "#",
         size: "36.5 MB",
       },
     ],
