@@ -237,22 +237,22 @@ export const mods: Mod[] = [
     accent: "#8a8a8a",
   },
   {
-    id: "antonui-se",
-    name: "AntonUI",
-    tagline: "A SkyUI-based interface overhaul.",
+    id: "skyui-se",
+    name: "SkyUI",
+    tagline: "The interface overhaul every build needs.",
     description:
       "Rebuilds Skyrim's menus — inventory, magic, favorites, and the MCM " +
-      "config menu — into something actually usable on a modern setup, " +
-      "built on the SkyUI framework. Requires SKSE64.",
+      "config menu — into something actually usable on a modern setup. " +
+      "Requires SKSE64.",
     genres: ["UI"],
     version: "6.11",
     requirements: ["Skyrim Special Edition", "SKSE64"],
     downloadUrl:
-      "https://github.com/anton9750/skyrim-mods-site/releases/download/antonui-6.11/AntonUI-SE.zip",
+      "https://github.com/anton9750/skyrim-mods-site/releases/download/skyui-6.11/SkyUI-SE.zip",
     downloadSize: "2.7 MB",
     files: [
-      { label: "antonui_SE.esp", size: "2.4 KB" },
-      { label: "antonui_SE.bsa", size: "2.7 MB" },
+      { label: "SkyUI_SE.esp", size: "2.4 KB" },
+      { label: "SkyUI_SE.bsa", size: "2.7 MB" },
     ],
     accent: "#5a8a9a",
   },
