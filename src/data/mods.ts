@@ -213,6 +213,29 @@ export const mods: Mod[] = [
     ],
     accent: "#c94848",
   },
+  {
+    id: "better-shaped-weapons-se",
+    name: "LeanWolf's Better-Shaped Weapons",
+    tagline: "Vanilla weapons, reshaped to look real.",
+    description:
+      "Reshapes the vanilla weapon meshes so they read as actual weapons " +
+      "instead of foam-paddle approximations, including improved blood " +
+      "meshes and optional sheaths for swords, daggers, and greatswords " +
+      "that vanilla never had. No plugin (.esp) — it's a pure mesh " +
+      "replacer, packaged as a FOMOD installer. Drop the zip into Vortex " +
+      "and it opens a wizard to pick exactly which weapon sets you want.",
+    genres: ["Graphics"],
+    version: "2.1.03",
+    requirements: ["Skyrim Special Edition"],
+    downloadUrl:
+      "https://github.com/anton9750/skyrim-mods-site/releases/download/better-shaped-weapons-2.1.03/Better-Shaped-Weapons-SE.zip",
+    downloadSize: "102 MB",
+    files: [
+      { label: "FOMod installer (pick weapon sets in Vortex)", size: "—" },
+      { label: "meshes + textures for every weapon type", size: "207 MB unpacked" },
+    ],
+    accent: "#8a8a8a",
+  },
 ];
 
 export const allGenres: Genre[] = [
