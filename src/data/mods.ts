@@ -23,6 +23,7 @@ export interface Mod {
   genres: Genre[];
   version: string;
   requirements?: string[];
+  requiredBy?: string[];
   downloadUrl: string;
   downloadSize: string;
   files?: ModFile[];
@@ -65,7 +66,10 @@ export const mods: Mod[] = [
       "proper city without breaking existing quests or navmesh.",
     genres: ["Immersion"],
     version: "1.0",
-    requirements: ["Skyrim Special Edition"],
+    requirements: [
+      "Skyrim Special Edition",
+      "Resources - The Great Cities (below)",
+    ],
     downloadUrl:
       "https://github.com/anton9750/skyrim-mods-site/releases/download/great-city-of-dawnstar-1.0/The-Great-City-of-Dawnstar.zip",
     downloadSize: "650 KB",
@@ -82,7 +86,10 @@ export const mods: Mod[] = [
       "without breaking existing quests or navmesh.",
     genres: ["Immersion"],
     version: "1.0",
-    requirements: ["Skyrim Special Edition"],
+    requirements: [
+      "Skyrim Special Edition",
+      "Resources - The Great Cities (below)",
+    ],
     downloadUrl:
       "https://github.com/anton9750/skyrim-mods-site/releases/download/great-city-of-falkreath-1.0/The-Great-City-of-Falkreath.zip",
     downloadSize: "435 KB",
@@ -99,7 +106,10 @@ export const mods: Mod[] = [
       "breaking existing quests or navmesh.",
     genres: ["Immersion"],
     version: "1.0",
-    requirements: ["Skyrim Special Edition"],
+    requirements: [
+      "Skyrim Special Edition",
+      "Resources - The Great Cities (below)",
+    ],
     downloadUrl:
       "https://github.com/anton9750/skyrim-mods-site/releases/download/great-city-of-morthal-1.0/The-Great-City-of-Morthal.zip",
     downloadSize: "300 KB",
@@ -116,7 +126,10 @@ export const mods: Mod[] = [
       "deserves, without breaking existing quests or navmesh.",
     genres: ["Immersion"],
     version: "1.0",
-    requirements: ["Skyrim Special Edition"],
+    requirements: [
+      "Skyrim Special Edition",
+      "Resources - The Great Cities (below)",
+    ],
     downloadUrl:
       "https://github.com/anton9750/skyrim-mods-site/releases/download/great-city-of-solitude-1.0/The-Great-City-of-Solitude.zip",
     downloadSize: "1.1 MB",
@@ -133,12 +146,47 @@ export const mods: Mod[] = [
       "without breaking existing quests or navmesh.",
     genres: ["Immersion"],
     version: "4.0",
-    requirements: ["Skyrim Special Edition"],
+    requirements: [
+      "Skyrim Special Edition",
+      "Resources - The Great Cities (below)",
+    ],
     downloadUrl:
       "https://github.com/anton9750/skyrim-mods-site/releases/download/great-city-of-winterhold-4.0/The-Great-City-of-Winterhold.zip",
     downloadSize: "1.4 MB",
     files: [{ label: "The Great City of Winterhold v4.esp", size: "1.4 MB" }],
     accent: "#4a5a9a",
+  },
+  {
+    id: "resources-the-great-cities",
+    name: "Resources - The Great Cities",
+    tagline: "The shared asset pack every Great City mod needs.",
+    description:
+      "The common meshes, textures, and base records that Dawnstar, " +
+      "Falkreath, Morthal, Solitude, and Winterhold all build on. Install " +
+      "this once alongside whichever city mods you're using — it has no " +
+      "effect in-game by itself.",
+    genres: ["Utilities"],
+    version: "1.0",
+    requirements: ["Skyrim Special Edition"],
+    requiredBy: [
+      "The Great City of Dawnstar",
+      "The Great City of Falkreath",
+      "The Great City of Morthal",
+      "The Great City of Solitude",
+      "The Great City of Winterhold",
+    ],
+    downloadUrl:
+      "https://github.com/anton9750/skyrim-mods-site/releases/download/resources-great-cities-1.0/Resources-The-Great-Cities.zip",
+    downloadSize: "313 MB",
+    files: [
+      { label: "Resources - The Great Cities.esp", size: "< 1 MB" },
+      { label: "Resources - The Great Cities.bsa", size: "152 MB" },
+      {
+        label: "Resources - The Great Cities - Textures.bsa",
+        size: "181 MB",
+      },
+    ],
+    accent: "#b8ab8c",
   },
 ];
 

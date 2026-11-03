@@ -74,6 +74,36 @@ const Tag = styled.span`
   color: ${(p) => p.theme.colors.parchmentDim};
 `;
 
+const DependencyRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  font-size: 11.5px;
+`;
+
+const DependencyLabel = styled.span`
+  color: ${(p) => p.theme.colors.muted};
+`;
+
+const RequirementPill = styled.span`
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(140, 42, 42, 0.14);
+  border: 1px solid rgba(140, 42, 42, 0.45);
+  color: #e3a3a3;
+`;
+
+const RequiredByPill = styled.span`
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(217, 143, 43, 0.1);
+  border: 1px solid rgba(217, 143, 43, 0.35);
+  color: ${(p) => p.theme.colors.emberBright};
+`;
+
 const Footer = styled.div`
   display: flex;
   align-items: center;
@@ -147,6 +177,9 @@ const FileRow = styled.li`
 
 export function ModCard({ mod }: { mod: Mod }) {
   const [showFiles, setShowFiles] = useState(false);
+  const modRequirements = (mod.requirements ?? []).filter(
+    (r) => r !== "Skyrim Special Edition",
+  );
 
   return (
     <Card $accent={mod.accent}>
@@ -161,6 +194,22 @@ export function ModCard({ mod }: { mod: Mod }) {
           <Tag key={g}>{g}</Tag>
         ))}
       </Tags>
+      {modRequirements.length > 0 && (
+        <DependencyRow>
+          <DependencyLabel>Requires:</DependencyLabel>
+          {modRequirements.map((r) => (
+            <RequirementPill key={r}>{r}</RequirementPill>
+          ))}
+        </DependencyRow>
+      )}
+      {mod.requiredBy && mod.requiredBy.length > 0 && (
+        <DependencyRow>
+          <DependencyLabel>Required by:</DependencyLabel>
+          {mod.requiredBy.map((r) => (
+            <RequiredByPill key={r}>{r}</RequiredByPill>
+          ))}
+        </DependencyRow>
+      )}
       <Footer>
         <Size>{mod.downloadSize}</Size>
         <DownloadButton href={mod.downloadUrl} download>
