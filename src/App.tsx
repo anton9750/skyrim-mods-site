@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { Header } from "./components/Header";
 import { SearchAndFilter } from "./components/SearchAndFilter";
+import { DownloadAllButton } from "./components/DownloadAllButton";
 import { ModGrid } from "./components/ModGrid";
 import { Footer } from "./components/Footer";
 import { mods, allGenres, type Genre } from "./data/mods";
@@ -33,6 +34,7 @@ function App() {
         activeGenre={activeGenre}
         onGenreChange={setActiveGenre}
       />
+      <DownloadAllButton mods={filtered} />
       <ModGrid mods={filtered} />
       <Footer />
     </>
