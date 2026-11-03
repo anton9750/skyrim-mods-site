@@ -188,6 +188,31 @@ export const mods: Mod[] = [
     ],
     accent: "#b8ab8c",
   },
+  {
+    id: "ordinator-perks-of-skyrim",
+    name: "Ordinator - Perks of Skyrim",
+    tagline: "A complete perk overhaul, done right.",
+    description:
+      "Rebuilds every perk tree from scratch with hundreds of new, " +
+      "meaningfully distinct perks, turning each build — warrior, mage, " +
+      "thief, or hybrid — into a real set of choices instead of a " +
+      "straight line to the best option. Plays well with Apocalypse.",
+    genres: ["Gameplay", "Combat", "Magic"],
+    version: "9.3",
+    requirements: ["Skyrim Special Edition", "SKSE64 (recommended)"],
+    downloadUrl:
+      "https://github.com/anton9750/skyrim-mods-site/releases/download/ordinator-9.3/Ordinator-Perks-of-Skyrim.zip",
+    downloadSize: "11 MB",
+    files: [
+      { label: "Ordinator - Perks of Skyrim.esp", size: "1.8 MB" },
+      { label: "Ordinator - Perks of Skyrim.bsa", size: "7.9 MB" },
+      {
+        label: "Ordinator - Perks of Skyrim - Textures.bsa",
+        size: "4.5 MB",
+      },
+    ],
+    accent: "#c94848",
+  },
 ];
 
 export const allGenres: Genre[] = [
