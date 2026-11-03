@@ -72,6 +72,74 @@ export const mods: Mod[] = [
     files: [{ label: "The Great City of Dawnstar.esp", size: "637 KB" }],
     accent: "#4c9a7a",
   },
+  {
+    id: "great-city-of-falkreath",
+    name: "The Great City of Falkreath",
+    tagline: "A proper frontier town, not a hamlet.",
+    description:
+      "Expands Falkreath with new buildings, streets, and NPCs, giving the " +
+      "hold capital the scale and atmosphere of a real frontier town " +
+      "without breaking existing quests or navmesh.",
+    genres: ["Immersion"],
+    version: "1.0",
+    requirements: ["Skyrim Special Edition"],
+    downloadUrl:
+      "https://github.com/anton9750/skyrim-mods-site/releases/download/great-city-of-falkreath-1.0/The-Great-City-of-Falkreath.zip",
+    downloadSize: "435 KB",
+    files: [{ label: "The Great City of Falkreath.esp", size: "434 KB" }],
+    accent: "#8a6a3a",
+  },
+  {
+    id: "great-city-of-morthal",
+    name: "The Great City of Morthal",
+    tagline: "The swamp town, built out properly.",
+    description:
+      "Expands Morthal with new buildings, streets, and NPCs, turning the " +
+      "smallest hold capital in Skyrim into a real, lived-in town without " +
+      "breaking existing quests or navmesh.",
+    genres: ["Immersion"],
+    version: "1.0",
+    requirements: ["Skyrim Special Edition"],
+    downloadUrl:
+      "https://github.com/anton9750/skyrim-mods-site/releases/download/great-city-of-morthal-1.0/The-Great-City-of-Morthal.zip",
+    downloadSize: "300 KB",
+    files: [{ label: "The Great City of Morthal.esp", size: "300 KB" }],
+    accent: "#4a6a7a",
+  },
+  {
+    id: "great-city-of-solitude",
+    name: "The Great City of Solitude",
+    tagline: "The imperial capital finally looks like one.",
+    description:
+      "Expands Solitude with new buildings, streets, and NPCs, giving the " +
+      "seat of the Empire in Skyrim the scale and density its status " +
+      "deserves, without breaking existing quests or navmesh.",
+    genres: ["Immersion"],
+    version: "1.0",
+    requirements: ["Skyrim Special Edition"],
+    downloadUrl:
+      "https://github.com/anton9750/skyrim-mods-site/releases/download/great-city-of-solitude-1.0/The-Great-City-of-Solitude.zip",
+    downloadSize: "1.1 MB",
+    files: [{ label: "The Great City of Solitude.esp", size: "1.1 MB" }],
+    accent: "#9a4a4a",
+  },
+  {
+    id: "great-city-of-winterhold",
+    name: "The Great City of Winterhold",
+    tagline: "Before the Collapse, a city worth remembering.",
+    description:
+      "Expands Winterhold with new buildings, streets, and NPCs, restoring " +
+      "a sense of scale to what the game treats as a ruined afterthought, " +
+      "without breaking existing quests or navmesh.",
+    genres: ["Immersion"],
+    version: "4.0",
+    requirements: ["Skyrim Special Edition"],
+    downloadUrl:
+      "https://github.com/anton9750/skyrim-mods-site/releases/download/great-city-of-winterhold-4.0/The-Great-City-of-Winterhold.zip",
+    downloadSize: "1.4 MB",
+    files: [{ label: "The Great City of Winterhold v4.esp", size: "1.4 MB" }],
+    accent: "#4a5a9a",
+  },
 ];
 
 export const allGenres: Genre[] = [
