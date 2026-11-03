@@ -55,6 +55,23 @@ export const mods: Mod[] = [
     ],
     accent: "#8a5cf6",
   },
+  {
+    id: "great-city-of-dawnstar",
+    name: "The Great City of Dawnstar",
+    tagline: "Turns Dawnstar into a real, lived-in city.",
+    description:
+      "Expands Dawnstar with new buildings, streets, and NPCs, giving one " +
+      "of vanilla Skyrim's smallest holds the scale and atmosphere of a " +
+      "proper city without breaking existing quests or navmesh.",
+    genres: ["Immersion"],
+    version: "1.0",
+    requirements: ["Skyrim Special Edition"],
+    downloadUrl:
+      "https://github.com/anton9750/skyrim-mods-site/releases/download/great-city-of-dawnstar-1.0/The-Great-City-of-Dawnstar.zip",
+    downloadSize: "650 KB",
+    files: [{ label: "The Great City of Dawnstar.esp", size: "637 KB" }],
+    accent: "#4c9a7a",
+  },
 ];
 
 export const allGenres: Genre[] = [
